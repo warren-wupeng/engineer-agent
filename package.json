@@ -1,0 +1,35 @@
+{
+  "name": "engineer-agent",
+  "version": "0.1.0",
+  "description": "An autonomous AI agent for software engineering tasks",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "automation",
+    "software-engineering"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.0",
+    "openai": "^4.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "dotenv": "^17.2.3",
+    "https-proxy-agent": "^7.0.6",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "undici": "^7.16.0",
+    "vitest": "^1.1.0"
+  }
+}
